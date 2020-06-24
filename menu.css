@@ -118,7 +118,7 @@ div .icon-bar {
   transform: none;
 }
 
-ul#menu {
+ul#menu__ul {
   display: inline-flex;
   flex-direction: column;
   height: 100%;
@@ -130,7 +130,10 @@ ul#menu {
   list-style: none;
   font-weight: 900;
 }
-li#menu {
+li#menu1,
+li#menu2,
+li#menu3,
+li#menu4 {
   list-style: none;
   font-weight: 900;
 }
