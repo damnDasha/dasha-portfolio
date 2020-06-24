@@ -1,0 +1,72 @@
+body {
+  font-family: "Playfair Display", serif;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(184, 191, 191, 0.5);
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+div.main-section-wrapper {
+  left: 25px;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  background-color: rgba(184, 191, 191);
+  padding: 10px;
+}
+
+a:link {
+  color: #592614;
+  text-decoration: none;
+}
+a:hover {
+  color: #d9ab9a;
+}
+a:visited {
+  color: #8c5b49;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #260101;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  color: #260101;
+  line-height: 2;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
