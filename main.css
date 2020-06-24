@@ -9,6 +9,38 @@ body {
   margin-bottom: 50px;
 }
 
+.hero-text {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+button#hire__me {
+  margin-top: 5px;
+  color: rgba(184, 191, 191) !important;
+  text-transform: uppercase;
+  background: #260101;
+  border: rgba(184, 191, 191) !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+button#hire__me:hover {
+  cursor: pointer;
+  color: #260101 !important;
+  transition: all 0.3s ease 0s;
+  background-color: rgba(184, 191, 191);
+  border-color: #260101 !important;
+  border-radius: 50px;
+  border: 4px solid;
+}
+
 div.main-section-wrapper {
   left: 25px;
   top: 25px;
@@ -16,6 +48,32 @@ div.main-section-wrapper {
   bottom: 25px;
   background-color: rgba(184, 191, 191);
   padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(38, 1, 1, 0.5);
+}
+
+.menu-social {
+  font-size: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+ul.contact-info {
+  list-style: none;
+}
+
+ul.tech {
+  list-style: square;
+  color: #8c5b49;
 }
 
 a:link {
@@ -38,6 +96,7 @@ h6 {
   margin: 0;
   color: #260101;
   font-weight: 700;
+  padding: 10px;
 }
 p {
   font-size: 16px;
@@ -69,4 +128,73 @@ h5 {
 
 h6 {
   font-size: 14px;
+}
+
+footer {
+  padding-top: 40px;
+}
+
+/* mobile view */
+@media only screen and (min-width: 320px) {
+  .hero-text {
+    padding-bottom: 400px;
+  }
+  p {
+    margin-left: 20px;
+  }
+
+  h2#projects,
+  h2#about_me,
+  h2#contact {
+    padding-bottom: 30px;
+  }
+  footer,
+  p#copyright {
+    padding-top: 40px;
+    text-align: right;
+  }
+}
+
+/* ipad view */
+@media only screen and (min-width: 760px) {
+  .hero-text {
+    padding-bottom: 400px;
+    padding-top: 400px;
+  }
+  p,
+  ul,
+  a {
+    margin: 50px;
+  }
+
+  h2#projects,
+  h2#about_me,
+  h2#contact,
+  h3 {
+    padding-bottom: 30px;
+    margin-left: 40px;
+  }
+
+  a#email,
+  a#linked {
+    margin: 0;
+  }
+}
+
+/*desktop view */
+@media only screen and (min-width: 1400px) {
+  p,
+  ul,
+  a {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  a#email {
+    margin: 0;
+  }
+
+  .menu-social {
+    padding: 10px;
+  }
 }

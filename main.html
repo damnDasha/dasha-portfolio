@@ -24,11 +24,15 @@
     ></script>
 
     <link rel="stylesheet" href="main.css" />
+    <link rel='menu-stylesheet' href='menu.css' />
+ 
   </head>
   <body>
+  
         <div class="main-section-wrapper">
 
     <header>
+
       <div class="menu-social">
         <a href="https://www.instagram.com/damn.Dasha" target="_blank"
           ><i class="fab fa-instagram-square"></i
@@ -36,16 +40,34 @@
         <a href="https://github.com/damndasha" target="_blank"
           ><i class="fab fa-github"></i>
         </a>
-
-    
-
-        <a
+          <a
           href="https://www.linkedin.com/in/dasha-akhten-0b727129/"
           target="_blank"
           ><i class="fab fa-linkedin"></i>
         </a>
+       
       </div>
+       
+      
+		<!-- <nav class="main-nav" id="main-nav">
+			<ul>
+				<li>
+					<a href="about.html">About me</a>
+				</li>
+		
+				<li>
+					<a href="main.html">Projects</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			
+			</ul>
+		</nav>
+	
+	</div> -->
     </header>
+    
  <h1>welcome to my portfolio!</h1>
 
     <div class="main-section">
@@ -68,7 +90,7 @@
         <p id="first-project">
 
           This project is a React app that allows the user to keep a food journal. Users can add days of the week, and enter food they eat in a calendar-style format. I created both the front end and back end for this app using PostgreSQL to store user input.
-          <ul>Technologies used:
+          <ul class='tech'>Technologies used:
           <li>HTML</li>
           <li>CSS</li>
           <li>javaScript</li>
@@ -83,6 +105,8 @@
             ><img
               src="images/Screen Shot 2020-04-23 at 12.01.16 PM.png"
               alt="food journal main screen photo"
+                          class="center"
+
           /></a><br/>
           <a
             href="https://github.com/thinkful-ei-macaw/foodversity-client"
@@ -101,7 +125,7 @@
         <p id="second-project">
           This app allows the user to learn Russian using the spaced repetition technique. Utilising a linked list algorithm, my colleague and I created this app using React and Node.js
           
-          <ul>Technologies used:
+          <ul class='tech'>Technologies used:
           <li>HTML</li>
           <li>CSS</li>
           <li>javaScript</li>
@@ -118,6 +142,8 @@
           <img
             src="images/Screen Shot 2020-06-19 at 11.01.20 AM.png"
             alt="photo of russian nesting dolls"
+                        class="center"
+
           /></a><br/>
             <a
             href="https://github.com/thinkful-ei-macaw/spaced-rep-client-dasha-javori"
@@ -132,7 +158,7 @@
         <p id="third-project">
           Working with my team, we chose to create a question and answer app to help businesses increase productivity. This app is built with React and allows users to sign up and ask questions about topics pertaining to their workplace.
           
-          <ul>Technologies used:
+          <ul class='tech'>Technologies used:
           <li>HTML</li>
           <li>CSS</li>
           <li>javaScript</li>
@@ -149,6 +175,7 @@
           <img
             src="images/Screen Shot 2020-06-23 at 8.36.43 PM.png"
             alt="OMNI qa screen"
+            class="center"
           /></a><br/>
                   <a
             href="https://github.com/thinkful-ei-macaw/omniqa-front-end"
@@ -166,6 +193,8 @@
       </h4>
       <p id="copyright">Made by Dasha!</p>
     </footer>
+    <script src="menu.js"></script>
+
   </body>
 
     </html>
