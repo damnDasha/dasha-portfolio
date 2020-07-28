@@ -9,6 +9,33 @@ body {
   margin-bottom: 50px;
 }
 
+.img__wrap {
+  position: relative;
+  /* height: 200px;
+  width: 257px; */
+}
+
+.img__description {
+  position: absolute;
+  background: rgba(184, 191, 191, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #260101;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  font-size: 100px;
+  font-weight: 800;
+}
+
 .hero-text {
   text-align: center;
   padding-top: 200px;
@@ -141,6 +168,17 @@ footer {
 
 /* mobile view */
 @media only screen and (min-width: 320px) {
+  div.desktop__menu {
+    visibility: hidden;
+  }
+
+  .img__description {
+    visibility: hidden;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: hidden;
+  }
   .hero-text {
     padding-bottom: 400px;
   }
@@ -177,9 +215,19 @@ footer {
 
 /* ipad view */
 @media only screen and (min-width: 760px) {
+  div.desktop__menu {
+    visibility: hidden;
+  }
   .hero-text {
     padding-bottom: 400px;
     padding-top: 400px;
+  }
+  .img__description {
+    visibility: hidden;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: hidden;
   }
   p,
   ul,
@@ -222,7 +270,68 @@ footer {
     margin: 0;
   }
 
+  div.tech {
+    text-align: left;
+  }
+  li {
+    list-style: none;
+    text-align: left;
+  }
+
   .menu-social {
     padding: 10px;
+  }
+  div.desktop__menu {
+    visibility: visible;
+  }
+  div.button,
+  span.icon-bar,
+  #nav-container {
+    visibility: hidden;
+  }
+  a#desk1,
+  a#desk2,
+  a#desk3 {
+    padding: 15px;
+    margin: 0px;
+  }
+
+  a {
+    margin: 50px;
+    font-weight: 700;
+  }
+
+  div.desktop__menu {
+    margin-left: 200px;
+    margin-top: -55px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .img__wrap {
+    position: relative;
+    /* height: 200px;
+  width: 257px; */
+  }
+
+  .img__description {
+    position: absolute;
+    background: rgba(184, 191, 191, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #260101;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+    font-size: 100px;
+    font-weight: 800;
   }
 }
