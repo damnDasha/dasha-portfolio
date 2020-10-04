@@ -77,8 +77,14 @@ div.tech {
   font-weight: 700;
 }
 
+li {
+  list-style: none;
+  text-align: left;
+}
+
 ul {
   list-style: square;
+  text-align: left;
 }
 
 a:link {
@@ -141,8 +147,17 @@ footer {
 
 /* mobile view */
 @media only screen and (min-width: 320px) {
+
+  div.desktop__menu {
+    visibility: hidden;
+  }
+
+  
   .hero-text {
+    padding-top: 200px;
     padding-bottom: 400px;
+
+
   }
   p,
   .tech,
@@ -178,9 +193,14 @@ footer {
 /* ipad view */
 @media only screen and (min-width: 760px) {
   .hero-text {
-    padding-bottom: 400px;
-    padding-top: 400px;
+    padding-top: 200px;
   }
+
+  div.desktop__menu {
+    visibility: hidden;
+  }
+
+  
   p,
   ul,
   a {
@@ -215,7 +235,7 @@ footer {
   }
 
   div.tech {
-    text-align: center;
+    text-align: left;
   }
 
   a#email {
@@ -225,4 +245,31 @@ footer {
   .menu-social {
     padding: 10px;
   }
+  div.desktop__menu {
+    visibility: visible;
+  }
+  div.button,
+  span.icon-bar,
+  #nav-container {
+    visibility: hidden;
+  }
+  a#desk1,
+  a#desk2,
+  a#desk3 {
+    padding: 50px;
+    margin: 0px;
+  }
+
+  a {
+    margin: 50px;
+    font-weight: 700;
+  }
+
+  div.desktop__menu {
+    margin-left: 200px;
+    margin-top: -55px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
 }
